@@ -1,10 +1,12 @@
 # Gilded Rose with C and Symbolic Execution
 
+This illustrates the "Provable Rewrites" pattern for validating a code improvement by proving program equivalence. It uses the Klee Symbolic Execution Engine on unaltered C.
+
 See also:
 
 * [Gilded Rose Kata](https://github.com/emilybache/GildedRose-Refactoring-Kata) compilation curated by Emily Bache
-* [Gilded Rose in Dafny](https://github.com/raymyers/gilded-rose-dafny) with formal specification.
-* [Klee Maze](https://github.com/grese/klee-maze)
+* [Klee](https://klee-se.org) Symbolic Execution Engine
+* [Gilded Rose in Dafny](https://github.com/raymyers/gilded-rose-dafny) video with formal specification
 
 ## Requirements
 
@@ -21,7 +23,7 @@ This will run the text tests, saving the result to `out.txt` and comparing with 
 make test
 ```
 
-To regnenerate the golden.txt, in case of an approved behavior change or system line breaks:
+To regenerate `golden.txt`, in case of an approved behavior change or system linebreaks:
 ```sh
 make golden
 ```
